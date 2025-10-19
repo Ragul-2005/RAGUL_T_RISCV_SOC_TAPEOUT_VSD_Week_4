@@ -95,9 +95,9 @@ $(V_{T0})$: Zero-bias threshold voltage
 
 
 Condition:   
-$$
+$
 V_{DS} < V_{GS} - V_{T}
-$$
+$
 
 
 
