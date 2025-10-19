@@ -1,4 +1,4 @@
-<div align="center"><b>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)</b></div>
+<div align="center"><h1>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)</h1></div>
 
 <p align="center">
 
