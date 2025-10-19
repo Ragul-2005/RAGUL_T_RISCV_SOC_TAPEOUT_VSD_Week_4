@@ -112,7 +112,8 @@ $$
 
 ### Saturation (Active) Region
 
-Condition: $$
+Condition: 
+$$
 V_{DS} \ge V_{GS} - V_{T}
 $$
 
