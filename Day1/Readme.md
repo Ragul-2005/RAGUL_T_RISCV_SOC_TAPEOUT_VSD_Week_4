@@ -54,6 +54,7 @@ An **NMOS transistor** is a **voltage-controlled device** that allows current be
 | Drain (D) | Electron exit point |
 | Body (B) | Substrate, usually connected to GND |
 
+<img width="350" height="297" alt="image" src="https://github.com/user-attachments/assets/6f0b88d8-1d87-41e7-b0b0-cbe0525fc83e" />
 
 ---
 
