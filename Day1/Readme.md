@@ -78,7 +78,7 @@ Where:
 - \(V_{T0}\) = Zero-bias threshold voltage  
 - \(V_{SB}\) = Source-to-body voltage  
 - \(\gamma\) = Body effect coefficient  
-- \(\Phi_F\) = Fermi potential  
+- \(\Phi_F\) = Fermi potential
 
 ![03](./images/03.png)
 
