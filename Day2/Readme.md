@@ -1,18 +1,18 @@
-<div align="center"><h1>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)</h1></div>
+<div align="center"><h1>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC </h1></div>
 
 <p align="center">
 
-
-![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge) 
-![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge) 
-![Focus](https://img.shields.io/badge/Focus-Velocity_Saturation%20%26%20CMOS_Inverter-orange?style=for-the-badge)
+<!-- First row -->
+<img src="https://img.shields.io/badge/Week-4-blue?style=for-the-badge" alt="Week">
+<img src="https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge" alt="Tasks">
+<img src="https://img.shields.io/badge/Focus-Velocity_Saturation%20%26%20CMOS_Inverter-orange?style=for-the-badge" alt="Focus">
 
 <br>
 
-
-![Simulation Tool](https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge) 
-![Process Node](https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge) 
-![Voltage Range](https://img.shields.io/badge/Voltage-0_to_1.8V-00BCD4?style=for-the-badge)
+<!-- Second row -->
+<img src="https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge" alt="Simulation Tool">
+<img src="https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge" alt="Process Node">
+<img src="https://img.shields.io/badge/Voltage-0_to_1.8V-00BCD4?style=for-the-badge" alt="Voltage Range">
 
 </p>
 
