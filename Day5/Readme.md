@@ -2,17 +2,17 @@
 # ⚡ **Day 5 — CMOS Inverter Supply & Device Variation Analysis**
 
 
-<!-- Badges in two rows, centered -->
 <p align="center">
   <img src="https://img.shields.io/badge/Week-4-blue?style=for-the-badge" alt="Week">
   <img src="https://img.shields.io/badge/Task-5_Completed-brightgreen?style=for-the-badge" alt="Task">
-<img src="https://img.shields.io/badge/Focus-Supply-and-Device-Voltage-orange?style=for-the-badge" alt="Focus">
+  <img src="https://img.shields.io/badge/Focus-Supply%20%26%20Device-Voltage-orange?style=for-the-badge" alt="Focus">
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Tool-NGSPICE-red?style=for-the-badge" alt="Tool">
   <img src="https://img.shields.io/badge/Library-Sky130-yellow?style=for-the-badge" alt="Library">
   <img src="https://img.shields.io/badge/Level-Intermediate-purple?style=for-the-badge" alt="Level">
 </p>
+
 
 ---
 
