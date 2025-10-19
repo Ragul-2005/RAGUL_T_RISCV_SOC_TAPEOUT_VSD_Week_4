@@ -1,5 +1,13 @@
 # ⚡ Day 1 — NMOS Id vs Vds Analysis
 
+![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks-1_Completed-brightgreen?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-NMOS%20Device%20Analysis%20%26%20SPICE%20Simulation-purple?style=for-the-badge)
+![Tool: Ngspice](https://img.shields.io/badge/Tool-Ngspice-lightblue?style=for-the-badge)
+![Tool: Sky130 PDK](https://img.shields.io/badge/Tool-Sky130%20PDK-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
+
+
 ### Ngspice + Sky130 — Device-Level CMOS Simulation
 
 ---
