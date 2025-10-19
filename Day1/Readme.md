@@ -94,7 +94,10 @@ $(V_{T0})$: Zero-bias threshold voltage
 ### Linear (Resistive) Region
 
 
-Condition: V_DS < V_GS - V_T
+Condition: $$
+V_{DS} < V_{GS} - V_{T}
+$$
+
 
 
 $$
@@ -109,7 +112,10 @@ $$
 
 ### Saturation (Active) Region
 
-Condition: V_DS ≥ V_GS - V_T
+Condition: $$
+V_{DS} \ge V_{GS} - V_{T}
+$$
+
 
 $$
 I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
