@@ -54,7 +54,6 @@ An **NMOS transistor** is a **voltage-controlled device** that allows current be
 | Drain (D) | Electron exit point |
 | Body (B) | Substrate, usually connected to GND |
 
-![01](./images/01.png)
 
 ---
 
@@ -64,9 +63,9 @@ An **NMOS transistor** is a **voltage-controlled device** that allows current be
 - Above **Vth**, a **strong inversion layer** forms → transistor **ON**.  
 - **Body effect:** Raising substrate voltage increases **Vth**.
 
-\[
-V_T = V_{T0} + \gamma \left( \sqrt{2\Phi_F + V_{SB}} - \sqrt{2\Phi_F} \right)
-\]
+
+V<sub>T</sub> = V<sub>T0</sub> + \gamma \left( \sqrt{2\Phi_F + V_{SB}} - \sqrt{2\Phi_F} \right)
+
 
 Where:  
 - \(V_{T0}\) = Zero-bias threshold voltage  
