@@ -1,96 +1,123 @@
-# ⚙️ Day 2 — Velocity Saturation & Basics of CMOS Inverter VTC
+⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)
 
-### *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
-
----
-
-## 📘 Introduction
-
-On **Day 2**, we explore **short-channel NMOS behavior**, focusing on **velocity saturation** effects using the **Sky130 PDK**.  
-We also design and simulate a **CMOS inverter** and plot its **Voltage Transfer Characteristic (VTC)**, linking **device physics** to **digital logic performance**.
+💻 *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
 
 ---
 
-## ⚡ Understanding Velocity Saturation in MOSFETs
+📘 Introduction
 
-In **short-channel devices** (e.g., 130 nm), carrier velocity **saturates** at high electric fields due to scattering, instead of increasing linearly.
-
-### ✨ Key Points
-
-- **Low fields:** Drift velocity \(v_d \propto E\)  
-- **High fields:** \(v_d \rightarrow v_{sat}\)  
-- **Impact:** Slower increase of drain current \(I_D\), reduced **gain**, and lower **transconductance** \(g_m\)
+On Day 2, we explore short-channel NMOS behavior, focusing on velocity saturation effects
+using the Sky130 PDK. We also design and simulate a CMOS inverter and plot its
+Voltage Transfer Characteristic (VTC).
 
 ---
 
-## 🧮 Drain Current with Velocity Saturation
+💡 Understanding Velocity Saturation in MOSFETs
 
-The **saturation-region drain current** for short-channel NMOS:
-
-\[
-I_D = \frac{W}{L} \mu_n C_{ox} (V_{GS} - V_T) V_{DSsat}
-\]
-
-with
-
-\[
-V_{DSsat} = \frac{E_{sat} L}{1 + \frac{E_{sat} L}{V_{GS} - V_T}}
-\]
-
-where \(E_{sat}\) is the critical electric field at which velocity saturation begins.
-
-> Observation: As channel length \(L\) decreases, **velocity saturation dominates**, limiting current and transconductance.
+📊 | Aspect                | Observation |
+| -------------------- | ----------- |
+| Low electric field    | Drift velocity v_d ∝ E |
+| High electric field   | v_d → v_sat |
+| Impact on transistor  | Slower increase of Id, reduced gain, lower transconductance g_m |
 
 ---
 
-## 🔬 SPICE Simulation — NMOS Id vs Vgs
+🧮 Drain Current with Velocity Saturation
 
-Perform a **DC sweep** on NMOS to extract **threshold voltage (Vth)**:
+ID = (W/L) * μn * Cox * (VGS - VT) * VDSsat
 
-```spice
-*Model Description
+VDSsat = (Esat * L) / (1 + (Esat * L)/(VGS - VT))
+
+---
+
+💻 SPICE Simulations
+
+### 💻 NMOS Id vs Vgs
+
+* NMOS Id vs Vgs Sweep
 .param temp=27
-
-
-*Including sky130 library files
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
-
-*Netlist Description
-
 XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
-
 R1 n1 in 55
 
 Vdd vdd 0 1.8V
 Vin in 0 1.8V
 
-*simulation commands
-
 .op
-.dc Vin 0 1.8 0.1 
+.dc Vin 0 1.8 0.1
 
 .control
-
 run
 display
 setplot dc1
 .endc
 
 .end
-```
 
-💻 Run Simulation
+Simulation command:
 ngspice day2_nfet_idvgs_L015_W039.spice
 
+📊 | Parameter                  | Value / Description |
+| -------------------------- | ----------------- |
+| Threshold Voltage (Vth)    | ≈ 0.45 V |
+| Sweep Range VGS            | 0–1.8 V |
+| Step Size                  | 0.1 V |
 
-Plot I<sub>D</sub> vs V<sub>GS</sub> and extract Vth using the linear extrapolation method:
+---
 
-Plot √I<sub>D</sub> vs V<sub>GS</sub>
+### 💻 NMOS Id vs Vds
 
-Extrapolate the straight portion to intersect the V<sub>GS</sub> axis
+* NMOS Id vs Vds Sweep
+.param temp=27
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
-Parameter	Value
-Extracted V<sub>th</sub>	≈ 0.45 V
+XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
+R1 n1 in 55
+
+Vdd vdd 0 1.8V
+Vin in 0 1.8V
+
+.op
+.dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
+
+.control
+run
+display
+setplot dc1
+.endc
+
+.end
+
+Simulation command:
+ngspice day2_nfet_idvds_L015_W039.spice
 
 
+
+📈 | Aspect                      | Observation |
+| --------------------------- | ----------- |
+| Linear Region               | Small VDS, Id ∝ VDS |
+| Saturation Region           | Id plateaus at high VDS |
+| Nested Sweep                | Outer: VGS 0–1.8 V, step 0.2 V; Inner: VDS 0–1.8 V, step 0.1 V |
+| Velocity Saturation Effect  | Limits drain current, reduces gain |
+| Short-Channel Effect        | Threshold shift, reduced transconductance |
+
+---
+  
+
+---
+
+🔬 CMOS Inverter — Voltage Transfer Characteristics (VTC)
+
+📊 | Concept                     | Key Takeaway |
+| --------------------------- | ------------ |
+| MOSFET as Switch            | NMOS ON when VGS>Vth, PMOS ON when VSG>|Vth| |
+| Inverter Action             | Low Vin: NMOS OFF, PMOS ON → Vout≈VDD; Transition: Both ON → Vout falls; High Vin: NMOS ON, PMOS OFF → Vout≈0 |
+| Velocity Saturation Impact  | Limits Id at high VDS, reduces gain |
+| Short Channel Effect        | Threshold voltage shift, reduced transconductance |
+| Switching Threshold Vm      | Determines balanced logic transition & noise margin |
+| VTC Curve                   | Shows Vout vs Vin, transition region, and gain |
+
+---
+
+➡️ Next Step: Proceed to Day 3 — CMOS Switching Threshold & Dynamic Simulations
