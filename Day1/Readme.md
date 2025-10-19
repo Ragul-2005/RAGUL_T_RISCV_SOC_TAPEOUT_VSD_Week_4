@@ -188,9 +188,17 @@ cd sky130CircuitDesignWorkshop/design
 
 ℹ️ **Note:** All example `.spice` files for daily experiments are located inside the `design/` directory.
 
-
-
-
+```bash
+ragul@ragul-Dell-G15-5530:~/sky130CircuitDesignWorkshop$ ls
+design  README.md
+ragul@ragul-Dell-G15-5530:~/sky130CircuitDesignWorkshop$ cd design/
+ragul@ragul-Dell-G15-5530:~/sky130CircuitDesignWorkshop/design$ ls
+day1_nfet_idvds_L2_W5.spice      day4_inv_noisemargin_wp1_wn036.spice
+day2_nfet_idvds_L015_W039.spice  day5_inv_devicevariation_wp7_wn042.spice
+day2_nfet_idvgs_L015_W039.spice  day5_inv_supplyvariation_Wp1_Wn036.spice
+day3_inv_tran_Wp084_Wn036.spice  id_test.cir
+day3_inv_vtc_Wp084_Wn036.spice   sky130_fd_pr
+```
 
 ## 🧱 Understanding a SPICE Netlist
 
