@@ -1,17 +1,43 @@
 <div align="center><b>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)</b></div>
 
-<p align="center">![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
-![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge)
+<p align="center">
+
+
+![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge) 
+![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge) 
 ![Focus](https://img.shields.io/badge/Focus-Velocity_Saturation%20%26%20CMOS_Inverter-orange?style=for-the-badge)
-</p>
-<p align="Center">
-![Simulation Tool](https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge)
-![Process Node](https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge)
+
+<br>
+
+
+![Simulation Tool](https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge) 
+![Process Node](https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge) 
 ![Voltage Range](https://img.shields.io/badge/VGS/VDS-0-1.8V-lightgrey?style=for-the-badge)
+
 </p>
+
 
 
 ## 💻 *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
+
+
+## 📑 Table of Contents — Week 4 (Day 2)
+
+1. [📘 Introduction](#📘-introduction)
+2. [💡 Understanding Velocity Saturation in MOSFETs](#💡-understanding-velocity-saturation-in-mosfets)
+   - [📈 Aspect vs Observation](#📈-aspect-vs-observation)
+3. [🧮 Drain Current with Velocity Saturation](#🧮-drain-current-with-velocity-saturation)
+4. [💻 SPICE Simulations](#💻-spice-simulations)
+   - [💻 NMOS Id vs Vgs](#💻-nmos-id-vs-vgs)
+   - [💻 NMOS Id vs Vds](#💻-nmos-id-vs-vds)
+   - [📊 Parameter vs Value / Description](#📊-parameter-vs-value--description)
+   - [📈 Aspect vs Observation](#📈-aspect-vs-observation-1)
+5. [🧠 CMOS Inverter — Voltage Transfer Characteristics (VTC) and Theory](#🧠-cmos-inverter---voltage-transfer-characteristics-vtc-and-theory)
+   - [⚙️ Key Operating Principles](#⚙️-key-operating-principles)
+   - [📊 Switching Threshold (V_m)](#📊-switching-threshold-v_m)
+   - [🧪 Theory — Velocity Saturation](#🧪-theory---velocity-saturation)
+   - [🧩 CMOS Inverter VTC Visualization](#🧩-cmos-inverter-vtc-visualization)
+6. [🧠 Summary Table — Day 2 Key Concepts](#🧠-summary-table---day-2-key-concepts)
 
 
 ---
