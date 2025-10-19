@@ -20,7 +20,7 @@
 - [🧠 Summary Table — Day 3 Key Concepts](#🧠summary-table---day-3-key-concepts)
 
 
-## 🎯 **Objective — Explore CMOS Inverter Static & Dynamic Characteristics**
+## 🎯**Objective — Explore CMOS Inverter Static & Dynamic Characteristics**
 
 On **Day 3**, we dive deep into the **CMOS inverter**, the cornerstone of digital logic. Using **Sky130 SPICE simulations**, we analyze both **static voltage behavior** and **dynamic timing response** to understand how inverters operate under various conditions.  
 
