@@ -65,6 +65,7 @@ ngspice day2_nfet_idvgs_L015_W039.spice
 <p align="center">
   <img width="704" height="545" alt="image" src="https://github.com/user-attachments/assets/fc2e9e8a-0490-4a49-b19d-ae395df5f492" />
 </p>
+
 ---
 
 📊 | Parameter                  | Value / Description |
