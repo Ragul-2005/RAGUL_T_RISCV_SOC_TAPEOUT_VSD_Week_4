@@ -12,7 +12,7 @@
 
 ![Simulation Tool](https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge) 
 ![Process Node](https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge) 
-![Voltage Range](https://img.shields.io/badge/VGS%2FVDS-0-1.8V-lightgrey?style=for-the-badge)
+![Voltage Range](https://img.shields.io/badge/Voltage-0_to_1.8V-lightgrey?style=for-the-badge)
 
 </p>
 
