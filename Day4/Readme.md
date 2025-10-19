@@ -1,5 +1,27 @@
 
-# 🧩 **Day 4 — CMOS Noise Margin & Robustness Evaluation**
+<div align="center"><h1># 🧩 **Day 4 — CMOS Noise Margin & Robustness Evaluation**</h1></div>
+
+![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks-4_Completed-brightgreen?style=for-the-badge)
+![Module](https://img.shields.io/badge/Module-CMOS_Inverter_Analysis-purple?style=for-the-badge)  
+![Focus](https://img.shields.io/badge/Focus-Noise_Margin_%26_Robustness-orange?style=for-the-badge)
+![Tool](https://img.shields.io/badge/Tool-ngspice_%7C_Sky130-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+
+## 🗂️ Table of Contents
+
+1. 🎯 Objective — Evaluating Static Behavior and Noise Immunity  
+2. ⚙️ SPICE Deck — CMOS Inverter Noise Margin Simulation  
+3. 📉 Voltage Transfer Characteristic (VTC) & Noise Margins  
+   - 🧮 Defining Noise Margin Parameters  
+   - ⚖️ Noise Margin Equations  
+4. ⚙️ Running the Simulation  
+5. 🔍 Extracting Noise Margins from SPICE Plot  
+6. ⚙️ Width Variation & Robustness Study  
+7. 🧩 Practical Insights  
+8. 🧠 Summary Table — Day 4 Key Concepts
+
 
 ## 🎯 **Objective — Evaluating Static Behavior and Noise Immunity of CMOS Inverters**
 
