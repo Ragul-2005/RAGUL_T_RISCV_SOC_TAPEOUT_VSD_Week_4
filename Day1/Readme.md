@@ -95,12 +95,9 @@ $(V_{T0})$: Zero-bias threshold voltage
 
 
 Condition:   
-$
-V_{DS} < V_{GS} - V_{T}
-$
-
-
-
+$[
+V_{DS} < (V_{GS} - V_T)
+]$
 
 $$
 I_D = \mu_n C_{ox} \frac{W}{L} \left[ (V_{GS} - V_T)V_{DS} - \frac{V_{DS}^2}{2} \right]
@@ -110,25 +107,10 @@ $$
 - Id increases **linearly** with Vds  
 - Suitable for **amplifiers and switches**
 
+<p align="center">
+<img width="913" height="598" alt="image" src="https://github.com/user-attachments/assets/ab04dbd5-9e58-4dbf-8dc6-5e61331b6012" />
+</p>
 ---
-
-### Saturation (Active) Region
-
-Condition: 
-$$
-V_{DS} \ge V_{GS} - V_{T}
-$$
-
-
-
-
-
-$$
-I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
-$$
-
-- **Pinch-off** occurs near the drain  
-- Id **saturates** and becomes almost constant
 
 ---
 ### 💨 Drift Current Concept
@@ -142,6 +124,10 @@ $$
 $$
 I_D = \mu_n C_{ox} \frac{W}{L} \left( V_{GS} - V_T - \frac{V_{DS}}{2} \right) V_{DS}
 $$
+<p align="center">
+  <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/4177f287-e85f-468e-8e78-257d0ff14a2f" />
+</p>
+
 
 > Id increases linearly with Vds before pinch-off occurs.
 
@@ -161,14 +147,142 @@ $$
 I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
 $$
 
+<p align="center">
+  <img width="748" height="349" alt="image" src="https://github.com/user-attachments/assets/aa04fa35-8d4e-4ac1-ac07-b9e15b3156fd" />
+</p>
+
+
 > NMOS acts like a **constant-current source** in this region.
 
 ---
 
-## SPICE Simulation Setup
+## Introduction to SPICE
 
-Clone the repository:
+**SPICE (Simulation Program with Integrated Circuit Emphasis)** is a powerful circuit analysis tool used to simulate electronic circuits before physical fabrication.  
+It allows designers to verify performance, power, and behavior across multiple operating conditions and process variations.
+
+**Why use SPICE?**
+- ✅ Predict circuit behavior before tapeout  
+- ⚡ Analyze DC, AC, and transient responses  
+- 🧩 Model device-level effects using PDK libraries  
+- 🔧 Optimize design parameters for power, speed, and area  
+
+---
+
+## ⚙️ Setting Up SPICE with Sky130
+
+To begin simulation using **Ngspice** with the **SkyWater 130nm open-source PDK**, follow these steps:
 
 ```bash
+sudo apt install ngspice
 git clone https://github.com/kunalg123/sky130CircuitDesignWorkshop.git
+cd sky130CircuitDesignWorkshop/design
+```
+### 📁 Important Files in the Repository
 
+| File Path                                                                | Description                                        |
+| ------------------------------------------------------------------------ | -------------------------------------------------- |
+| `/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.pm3.spice`    | SPICE model for the NFET (typical process corner). |
+| `/sky130_fd_pr/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice` | Corner model for NFET (used for PVT variations).   |
+| `/sky130_fd_pr/models/sky130.lib.pm3.spice`                              | Main library containing all Sky130 process models. |
+
+ℹ️ **Note:** All example `.spice` files for daily experiments are located inside the `design/` directory.
+
+
+
+
+
+## 🧱 Understanding a SPICE Netlist
+
+The SPICE netlist defines the **circuit**, **model**, and **simulation commands**.
+Below is an example setup for **NMOS Id–Vds simulation**:
+
+```spice
+*** Model Description ***
+.param temp=27
+
+*** Including sky130 library files ***
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+*** Netlist Description ***
+XM1 vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=5 l=2
+R1 n1 in 55
+Vdd vdd 0 1.8
+Vin in 0 1.8
+
+*** Simulation Commands ***
+.op
+.dc Vdd 0 1.8 0.1 Vin 0 1.8 0.2
+
+.control
+run
+display
+setplot dc1
+.endc
+
+.end
+```
+
+---
+
+## ✍️ Circuit Syntax Explained
+
+| Element                     | Description                                  |
+| --------------------------- | -------------------------------------------- |
+| **XM1**                     | MOSFET instance name                         |
+| **vdd n1 0 0**              | Node connections — Drain, Gate, Source, Body |
+| **sky130_fd_pr__nfet_01v8** | Sky130 NMOS model name                       |
+| **w=5 l=2**                 | Transistor dimensions (in micrometers)       |
+| **Vdd, Vin**                | DC sources for biasing                       |
+
+🧠 *Example:*
+
+```
+M1 D G S B sky130_fd_pr__nfet_01v8 W=2u L=0.15u
+```
+
+---
+
+## 🚀 Running Your First SPICE Simulation
+
+Run the simulation in the terminal:
+
+```bash
+ngspice day1_nfet_idvds_L2_W5.spice
+```
+
+Inside the Ngspice prompt, plot the drain current:
+
+```bash
+plot -vdd#branch
+```
+
+This command plots the **drain current (Id)** vs **drain-to-source voltage (Vds)** for multiple gate voltages (Vgs).
+
+<p align="center">
+<img width="704" height="550" alt="image" src="https://github.com/user-attachments/assets/32a5eda1-773d-4409-8f90-931c05029f98" />
+</p>
+---
+
+## 📊 Observations — Id vs Vds
+
+In the plotted waveforms, observe:
+
+* 📈 **Linear Region:** Current increases linearly with Vds at small voltages.
+* 🌀 **Saturation Region:** Id flattens out as Vds increases (channel pinch-off).
+* ⚙️ **Effect of Vgs:** Higher Vgs increases Id due to stronger channel inversion.
+
+---
+
+## 🧠 Summary
+
+| Concept                  | Key Takeaway                                                |
+| ------------------------ | ----------------------------------------------------------- |
+| **SPICE Simulation**     | Essential for pre-fabrication circuit verification          |
+| **NMOS Device Behavior** | Controlled by gate voltage (Vgs)                            |
+| **Resistive Region**     | Linear Id–Vds behavior                                      |
+| **Saturation Region**    | Id saturates ∝ (Vgs − Vth)²                                 |
+| **Body Effect**          | Raises Vth when substrate potential increases               |
+| **Ngspice**              | Open-source simulator for device and circuit-level analysis |
+
+---
