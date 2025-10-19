@@ -2,11 +2,12 @@
 
 ## 🧩 RISC-V SoC Tapeout Program
 
-![GitHub last commit](https://img.shields.io/github/last-commit/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
-![GitHub repo size](https://img.shields.io/github/repo-size/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
-![GitHub issues](https://img.shields.io/github/issues/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
-![GitHub stars](https://img.shields.io/github/stars/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social)
-![GitHub forks](https://img.shields.io/github/forks/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social)
+<div align="center">
+  <img src="https://img.shields.io/badge/Week4-CMOS%20Circuit%20Design-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Tools-Ngspice-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Language-SPICE-red?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Simulation-Transient%20Analysis-green?style=for-the-badge" />
+</div>
 
 
 Welcome to **Week 4** of the **RISC-V SoC Tapeout Program**! This week, we transition from digital logic abstraction to **transistor-level building blocks** that form the foundation of every logic gate. 🌱
@@ -38,6 +39,14 @@ By completing Week 4, you will:
 * 🔍 Connect **analog transistor physics** to **digital timing closure** considerations for later stages.
 
 ---
+
+<p align="center">
+  <img src="https://img.shields.io/github/last-commit/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Last Commit">
+  <img src="https://img.shields.io/github/repo-size/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Repo Size">
+  <img src="https://img.shields.io/github/issues/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Open Issues">
+  <img src="https://img.shields.io/github/stars/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social" alt="Stars">
+  <img src="https://img.shields.io/github/forks/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social" alt="Forks">
+</p>
 
 ## 🏁 End of Week 4
 
