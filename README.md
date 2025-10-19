@@ -2,6 +2,13 @@
 
 ## 🧩 RISC-V SoC Tapeout Program
 
+![GitHub last commit](https://img.shields.io/github/last-commit/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
+![GitHub repo size](https://img.shields.io/github/repo-size/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
+![GitHub issues](https://img.shields.io/github/issues/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4)
+![GitHub stars](https://img.shields.io/github/stars/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social)
+
+
 Welcome to **Week 4** of the **RISC-V SoC Tapeout Program**! This week, we transition from digital logic abstraction to **transistor-level building blocks** that form the foundation of every logic gate. 🌱
 
 You'll simulate and analyze **CMOS devices** using **Ngspice** with the **Sky130 PDK**, observing how **transistor physics** directly affects **timing, power, and reliability** on silicon. Each day links **analog device behavior** to **digital circuit performance**. ⚡💡
