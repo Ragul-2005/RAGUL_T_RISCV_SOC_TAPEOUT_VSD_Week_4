@@ -20,9 +20,6 @@
 
 ## 💻 *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
 
-
-## 📑 Table of Contents — Week 4 (Day 2)
-
 ## 📑 Table of Contents — Week 4 (Day 2)
 
 1. [📘 Introduction](#introduction)
