@@ -83,7 +83,9 @@ $(V_{T0})$: Zero-bias threshold voltage
 * $(\gamma)$: Body effect coefficient
 * $(\Phi_F)$: Fermi potential
 
-![03](./images/03.png)
+<p align="center">
+<img width="350" height="297" alt="image" src="https://github.com/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4/blob/main/Day1/Images/unnamed.jpg?raw=true" />
+</p>
 
 ---
 
