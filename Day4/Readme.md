@@ -195,12 +195,3 @@ Noise margin optimization is critical in **low-power, high-speed designs**, wher
 | **SPICE Simulation**        | Enables direct measurement of realistic noise immunity using Sky130 models.     |
 
 ---
-
-### 🔗 **Next Step**
-
-➡️ Proceed to **[Day 5 — CMOS Power, Delay & Performance Analysis](../Day5_Power_Supply_Variation/readme.md)**
-
-Here, you’ll extend your understanding of inverter dynamics to **energy and timing metrics** — exploring **propagation delay**, **dynamic power**, and **leakage characteristics** under varying load and frequency conditions.
-
----
-
