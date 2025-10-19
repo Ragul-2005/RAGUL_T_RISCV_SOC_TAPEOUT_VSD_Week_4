@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Tasks-1_Completed-brightgreen?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Focus-NMOS%20Device%20Analysis%20%26%20SPICE%20Simulation-purple?style=for-the-badge" />
 </p>
-<p align="center>
+<p align="center">
   <img src="https://img.shields.io/badge/Tool-Ngspice-lightblue?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Tool-Sky130%20PDK-orange?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
