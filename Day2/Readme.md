@@ -35,6 +35,7 @@ VDSsat = (Esat * L) / (1 + (Esat * L)/(VGS - VT))
 ### 💻 NMOS Id vs Vgs
 
 * NMOS Id vs Vgs Sweep
+  ```spice
 .param temp=27
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
@@ -54,9 +55,17 @@ setplot dc1
 .endc
 
 .end
+```
 
 Simulation command:
+```bash
 ngspice day2_nfet_idvgs_L015_W039.spice
+```
+
+<p align="center">
+  <img width="704" height="545" alt="image" src="https://github.com/user-attachments/assets/fc2e9e8a-0490-4a49-b19d-ae395df5f492" />
+</p>
+
 
 📊 | Parameter                  | Value / Description |
 | -------------------------- | ----------------- |
@@ -69,6 +78,7 @@ ngspice day2_nfet_idvgs_L015_W039.spice
 ### 💻 NMOS Id vs Vds
 
 * NMOS Id vs Vds Sweep
+```spice
 .param temp=27
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
@@ -88,10 +98,15 @@ setplot dc1
 .endc
 
 .end
+```
 
 Simulation command:
+```bash
 ngspice day2_nfet_idvds_L015_W039.spice
-
+```
+<p align="center">
+  <img width="704" height="545" alt="image" src="https://github.com/user-attachments/assets/4a6a39d6-b2db-4def-b87f-61c40b0a2d63" />
+</p>
 
 
 📈 | Aspect                      | Observation |
@@ -105,19 +120,82 @@ ngspice day2_nfet_idvds_L015_W039.spice
 ---
   
 
+🧠 CMOS Inverter — Voltage Transfer Characteristics (VTC) and Theory
+
+In Day 2, we focus on the basic CMOS inverter behavior and the effects of velocity saturation in short-channel devices using Sky130 SPICE simulations.
+
+
+⚙️ Key Operating Principles
+
+1. MOSFET as a Switch
+   - NMOS: Conducts when V_GS > V_th
+   - PMOS: Conducts when V_SG > |V_th|
+
+2. Drain Current Dependence
+   - Long-channel devices: I_D ∝ (V_GS - V_th)^2
+   - Short-channel devices: High electric fields → velocity saturation → limits I_D
+
+3. CMOS Inverter Action
+   - Low Input (V_in < V_th): NMOS OFF, PMOS ON → V_out ≈ V_DD
+   - Transition Region: Both transistors partially ON → V_out falls rapidly
+   - High Input (V_in > V_th): NMOS ON, PMOS OFF → V_out ≈ 0
+
 ---
 
-🔬 CMOS Inverter — Voltage Transfer Characteristics (VTC)
+📊 Switching Threshold (V_m)
 
-📊 | Concept                     | Key Takeaway |
-| --------------------------- | ------------ |
-| MOSFET as Switch            | NMOS ON when VGS>Vth, PMOS ON when VSG>|Vth| |
-| Inverter Action             | Low Vin: NMOS OFF, PMOS ON → Vout≈VDD; Transition: Both ON → Vout falls; High Vin: NMOS ON, PMOS OFF → Vout≈0 |
-| Velocity Saturation Impact  | Limits Id at high VDS, reduces gain |
-| Short Channel Effect        | Threshold voltage shift, reduced transconductance |
-| Switching Threshold Vm      | Determines balanced logic transition & noise margin |
-| VTC Curve                   | Shows Vout vs Vin, transition region, and gain |
+Switching threshold voltage V_m is the input voltage at which V_in = V_out
+
+- At V_m, NMOS and PMOS currents are equal in magnitude
+- Determines logic transition point and noise margins
+- For balanced rise/fall times, PMOS is typically sized ≈ 2× NMOS (W/L)
+
+| Parameter           | Symbol         | Typical Value |
+| ------------------- | -------------- | ------------- |
+| Switching Threshold | V_m            | ≈ 0.88 V     |
+| Supply Voltage      | V_DD           | 1.8 V        |
+| PMOS/NMOS ratio     | Wp/Wn          | ≈ 2          |
 
 ---
 
-➡️ Next Step: Proceed to Day 3 — CMOS Switching Threshold & Dynamic Simulations
+🧪 Theory — Velocity Saturation
+
+- In short-channel devices, electrons cannot accelerate indefinitely
+- Drain current saturates at high V_DS, limiting switching speed
+- Important for low-power, high-speed CMOS design
+
+| Effect                   | Impact on Inverter                              |
+| ------------------------ | ----------------------------------------------- |
+| Velocity Saturation      | Limits drain current, reduces gain              |
+| Short Channel Effect     | Threshold voltage shift, increased leakage      |
+| VTC Transition Sharpness | Affected by W/L ratio and mobility saturation  |
+| Switching Threshold Vm   | Determines inverter’s balanced operating point |
+
+---
+
+🧩 CMOS Inverter VTC Visualization
+
+- VTC curve represents V_out vs V_in
+- Shows transition region, logic high/low levels, and switching threshold
+- Sharpness indicates inverter’s gain and speed
+
+💡 Observations:
+- Symmetric switching occurs with (W/L)_PMOS ≈ 2 × (W/L)_NMOS
+- Propagation delay and noise margin are directly influenced by device sizing and velocity saturation
+
+---
+
+<p align="center">
+  <img width="1015" height="717" alt="image" src="https://github.com/user-attachments/assets/2a69dfd7-de17-44aa-a2b7-ce2b918f8cb8" />
+</p>
+
+
+🧠 Summary Table — Day 2 Key Concepts
+
+| Concept                      | Key Takeaway                                                         |
+| ---------------------------- | -------------------------------------------------------------------- |
+| Velocity Saturation           | Limits electron velocity at high electric fields                     |
+| Short Channel Effect          | Reduces drain current and transconductance                           |
+| CMOS Inverter VTC             | Shows input-output behavior, transition region, and Vm               |
+| Switching Threshold (Vm)      | Determines logic transition point, affects noise margin              |
+| SPICE Simulation              | Enables observation of short-channel and velocity saturation effects |
