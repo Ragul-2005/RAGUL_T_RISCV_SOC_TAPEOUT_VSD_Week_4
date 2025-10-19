@@ -50,5 +50,5 @@ By completing Week 4, you will:
 
 ## 🏁 End of Week 4
 
-**Prepared by:** RAGUL T
-**Email:** tha.ragul2005@gmail.com
+- **Prepared by:** RAGUL T
+- **Email:** tha.ragul2005@gmail.com
