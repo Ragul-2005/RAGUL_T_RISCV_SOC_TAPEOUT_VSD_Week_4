@@ -5,18 +5,21 @@
 ---
 
 ## 📌 Table of Contents
-- [Introduction](#introduction)  
+ [Introduction](#introduction)  
 - [Why SPICE Simulations Matter](#why-spice-simulations-matter)  
 - [NMOS Device Overview](#nmos-device-overview)  
 - [Threshold Voltage & Body Effect](#threshold-voltage--body-effect)  
 - [Operating Regions of NMOS](#operating-regions-of-nmos)  
   - [Linear (Resistive) Region](#linear-resistive-region)  
-  - [Saturation (Active) Region](#saturation-active-region)  
-- [SPICE Simulation Setup](#spice-simulation-setup)  
-- [Running Simulations](#running-simulations)  
-- [Results & Observations](#results--observations)  
-- [Summary](#summary)  
-- [Next Steps](#next-steps)  
+  - [💨 Drift Current Concept](#-drift-current-concept)  
+  - [⚙️ Pinch-Off and Saturation Region](#️-pinch-off-and-saturation-region)  
+- [Introduction to SPICE](#introduction-to-spice)  
+- [⚙️ Setting Up SPICE with Sky130](#️-setting-up-spice-with-sky130)  
+- [🧱 Understanding a SPICE Netlist](#-understanding-a-spice-netlist)  
+- [✍️ Circuit Syntax Explained](#️-circuit-syntax-explained)  
+- [🚀 Running Your First SPICE Simulation](#-running-your-first-spice-simulation)  
+- [📊 Observations — Id vs Vds](#-observations--id-vs-vds)  
+- [🧠 Summary](#-summary) 
 
 ---
 
