@@ -42,7 +42,7 @@ By the end of this day, you’ll be able to:
 
 ---
 
-## ⚙️ **SPICE Deck 1 — CMOS Inverter VTC Simulation**
+## ⚙️**SPICE Deck 1 — CMOS Inverter VTC Simulation**
 
 ```spice
 *Model & Parameter Setup
