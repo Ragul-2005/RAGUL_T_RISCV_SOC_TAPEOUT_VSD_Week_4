@@ -14,11 +14,15 @@ Voltage Transfer Characteristic (VTC).
 
 💡 Understanding Velocity Saturation in MOSFETs
 
-📊 | Aspect                | Observation |
-| -------------------- | ----------- |
-| Low electric field    | Drift velocity v_d ∝ E |
-| High electric field   | v_d → v_sat |
-| Impact on transistor  | Slower increase of Id, reduced gain, lower transconductance g_m |
+📈 Aspect vs Observation
+
+| Aspect                     | Observation                                                   |
+|----------------------------|---------------------------------------------------------------|
+| Linear Region              | Small VDS, Id ∝ VDS                                           |
+| Saturation Region          | Id plateaus at high VDS                                       |
+| Nested Sweep               | Outer: VGS 0–1.8 V, step 0.2 V; Inner: VDS 0–1.8 V, step 0.1 V |
+| Velocity Saturation Effect | Limits drain current, reduces gain                             |
+| Short-Channel Effect       | Threshold shift, reduced transconductance                      |
 
 ---
 
