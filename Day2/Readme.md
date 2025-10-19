@@ -65,15 +65,14 @@ ngspice day2_nfet_idvgs_L015_W039.spice
 <p align="center">
   <img width="704" height="545" alt="image" src="https://github.com/user-attachments/assets/fc2e9e8a-0490-4a49-b19d-ae395df5f492" />
 </p>
-
-<div align="Center">
+---
 
 📊 | Parameter                  | Value / Description |
 | -------------------------- | ----------------- |
 | Threshold Voltage (Vth)    | ≈ 0.45 V |
 | Sweep Range VGS            | 0–1.8 V |
 | Step Size                  | 0.1 V |
-</div>
+
 ---
 
 ### 💻 NMOS Id vs Vds
