@@ -93,11 +93,13 @@ $(V_{T0})$: Zero-bias threshold voltage
 
 ### Linear (Resistive) Region
 
-Condition: \(V_{DS} < V_{GS} - V_T\)  
 
-\[
+Condition: V_DS < V_GS - V_T
+
+
+$$
 I_D = \mu_n C_{ox} \frac{W}{L} \left[ (V_{GS} - V_T)V_{DS} - \frac{V_{DS}^2}{2} \right]
-\]
+$$
 
 - Acts like a **voltage-controlled resistor**  
 - Id increases **linearly** with Vds  
@@ -107,11 +109,11 @@ I_D = \mu_n C_{ox} \frac{W}{L} \left[ (V_{GS} - V_T)V_{DS} - \frac{V_{DS}^2}{2} 
 
 ### Saturation (Active) Region
 
-Condition: \(V_{DS} \ge V_{GS} - V_T\)  
+Condition: V_DS ≥ V_GS - V_T
 
-\[
+$$
 I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
-\]
+$$
 
 - **Pinch-off** occurs near the drain  
 - Id **saturates** and becomes almost constant
