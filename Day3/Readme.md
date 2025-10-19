@@ -1,7 +1,7 @@
 # 🧩 **Day 3 — CMOS Inverter Switching Threshold & Dynamic Behavior**
 
-![Week](https://img.shields.io/badge/Week-3-blue?style=for-the-badge)
-![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge)
+![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks-3_Completed-brightgreen?style=for-the-badge)
 ![Focus](https://img.shields.io/badge/Focus-Static_and_Dynamic-Cyan?style=for-the-badge)
 
 ---
