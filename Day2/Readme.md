@@ -35,7 +35,7 @@ VDSsat = (Esat * L) / (1 + (Esat * L)/(VGS - VT))
 ### 💻 NMOS Id vs Vgs
 
 * NMOS Id vs Vgs Sweep
-  ```spice
+```spice
 .param temp=27
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
