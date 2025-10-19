@@ -72,11 +72,13 @@ ngspice day2_nfet_idvgs_L015_W039.spice
 
 ---
 
-📊 | Parameter                  | Value / Description |
-| -------------------------- | ----------------- |
-| Threshold Voltage (Vth)    | ≈ 0.45 V |
-| Sweep Range VGS            | 0–1.8 V |
-| Step Size                  | 0.1 V |
+📊 Parameter vs Value / Description
+
+| Parameter               | Value / Description |
+|------------------------|-------------------|
+| Threshold Voltage (Vth) | ≈ 0.45 V         |
+| Sweep Range VGS         | 0–1.8 V           |
+| Step Size               | 0.1 V             |
 
 ---
 
