@@ -75,10 +75,13 @@ $$
 
 
 Where:  
-- \(V_{T0}\) = Zero-bias threshold voltage  
-- \(V_{SB}\) = Source-to-body voltage  
-- \(\gamma\) = Body effect coefficient  
+<div style="font-size:18px; margin-top:10px;">
+<b>Where:</b><br>
+- \(V_{T0}\) = Zero-bias threshold voltage<br>
+- \(V_{SB}\) = Source-to-body voltage<br>
+- \(\gamma\) = Body effect coefficient<br>
 - \(\Phi_F\) = Fermi potential
+</div>
 
 ![03](./images/03.png)
 
