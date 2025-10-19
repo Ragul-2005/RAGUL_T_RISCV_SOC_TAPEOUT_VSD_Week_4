@@ -48,24 +48,49 @@ where \(E_{sat}\) is the critical electric field at which velocity saturation be
 Perform a **DC sweep** on NMOS to extract **threshold voltage (Vth)**:
 
 ```spice
-* NMOS Id vs Vgs Sweep
+*Model Description
 .param temp=27
+
+
+*Including sky130 library files
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 
+
+*Netlist Description
+
 XM1 Vdd n1 0 0 sky130_fd_pr__nfet_01v8 w=0.39 l=0.15
+
 R1 n1 in 55
 
 Vdd vdd 0 1.8V
 Vin in 0 1.8V
 
+*simulation commands
+
 .op
-.dc Vin 0 1.8 0.1
+.dc Vin 0 1.8 0.1 
 
 .control
+
 run
 display
 setplot dc1
 .endc
 
 .end
+```
+
+💻 Run Simulation
+ngspice day2_nfet_idvgs_L015_W039.spice
+
+
+Plot I<sub>D</sub> vs V<sub>GS</sub> and extract Vth using the linear extrapolation method:
+
+Plot √I<sub>D</sub> vs V<sub>GS</sub>
+
+Extrapolate the straight portion to intersect the V<sub>GS</sub> axis
+
+Parameter	Value
+Extracted V<sub>th</sub>	≈ 0.45 V
+
 
