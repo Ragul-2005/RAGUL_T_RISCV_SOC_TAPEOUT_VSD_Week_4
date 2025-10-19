@@ -1,12 +1,16 @@
 
 <div align="center"><h1># 🧩 **Day 4 — CMOS Noise Margin & Robustness Evaluation**</h1></div>
 
-![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
-![Tasks](https://img.shields.io/badge/Tasks-4_Completed-brightgreen?style=for-the-badge)
-![Module](https://img.shields.io/badge/Module-CMOS_Inverter_Analysis-purple?style=for-the-badge)  
-![Focus](https://img.shields.io/badge/Focus-Noise_Margin_%26_Robustness-orange?style=for-the-badge)
-![Tool](https://img.shields.io/badge/Tool-ngspice_%7C_Sky130-blueviolet?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+<p align="center">
+  
+  <img src="https://img.shields.io/badge/Week-4-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tasks-4_Completed-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Module-CMOS_Inverter_Analysis-purple?style=for-the-badge"><br>
+  <img src="https://img.shields.io/badge/Focus-Noise_Margin_%26_Robustness-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tool-ngspice_%7C_Sky130-blueviolet?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+
+</p>
 
 
 ## 🗂️ Table of Contents
