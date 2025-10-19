@@ -1,10 +1,22 @@
-⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)
+<div align="center><b>⚙️ Day 2 — Velocity Saturation & CMOS Inverter VTC (Code + Emojis)</b></div>
 
-💻 *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
+<p align="center">![Week](https://img.shields.io/badge/Week-4-blue?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Velocity_Saturation%20%26%20CMOS_Inverter-orange?style=for-the-badge)
+</p>
+<p align="Center">
+![Simulation Tool](https://img.shields.io/badge/Simulation-Ngspice-purple?style=for-the-badge)
+![Process Node](https://img.shields.io/badge/Process-Sky130%20nm-red?style=for-the-badge)
+![Voltage Range](https://img.shields.io/badge/VGS/VDS-0-1.8V-lightgrey?style=for-the-badge)
+</p>
+
+
+## 💻 *NgspiceSky130 — CMOS Circuit Design & SPICE Simulation Journey*
+
 
 ---
 
-📘 Introduction
+## 📘 Introduction
 
 On Day 2, we explore short-channel NMOS behavior, focusing on velocity saturation effects
 using the Sky130 PDK. We also design and simulate a CMOS inverter and plot its
@@ -12,7 +24,7 @@ Voltage Transfer Characteristic (VTC).
 
 ---
 
-💡 Understanding Velocity Saturation in MOSFETs
+## 💡 Understanding Velocity Saturation in MOSFETs
 
 📈 Aspect vs Observation
 
@@ -26,7 +38,7 @@ Voltage Transfer Characteristic (VTC).
 
 ---
 
-🧮 Drain Current with Velocity Saturation
+## 🧮 Drain Current with Velocity Saturation
 
 ID = (W/L) * μn * Cox * (VGS - VT) * VDSsat
 
@@ -34,7 +46,7 @@ VDSsat = (Esat * L) / (1 + (Esat * L)/(VGS - VT))
 
 ---
 
-💻 SPICE Simulations
+## 💻 SPICE Simulations
 
 ### 💻 NMOS Id vs Vgs
 
@@ -127,12 +139,12 @@ ngspice day2_nfet_idvds_L015_W039.spice
 ---
   
 
-🧠 CMOS Inverter — Voltage Transfer Characteristics (VTC) and Theory
+## 🧠 CMOS Inverter — Voltage Transfer Characteristics (VTC) and Theory
 
 In Day 2, we focus on the basic CMOS inverter behavior and the effects of velocity saturation in short-channel devices using Sky130 SPICE simulations.
 
 
-⚙️ Key Operating Principles
+## ⚙️ Key Operating Principles
 
 1. MOSFET as a Switch
    - NMOS: Conducts when V_GS > V_th
@@ -149,7 +161,7 @@ In Day 2, we focus on the basic CMOS inverter behavior and the effects of veloci
 
 ---
 
-📊 Switching Threshold (V_m)
+## 📊 Switching Threshold (V_m)
 
 Switching threshold voltage V_m is the input voltage at which V_in = V_out
 
@@ -165,7 +177,7 @@ Switching threshold voltage V_m is the input voltage at which V_in = V_out
 
 ---
 
-🧪 Theory — Velocity Saturation
+## 🧪 Theory — Velocity Saturation
 
 - In short-channel devices, electrons cannot accelerate indefinitely
 - Drain current saturates at high V_DS, limiting switching speed
@@ -180,7 +192,7 @@ Switching threshold voltage V_m is the input voltage at which V_in = V_out
 
 ---
 
-🧩 CMOS Inverter VTC Visualization
+## 🧩 CMOS Inverter VTC Visualization
 
 - VTC curve represents V_out vs V_in
 - Shows transition region, logic high/low levels, and switching threshold
@@ -197,7 +209,7 @@ Switching threshold voltage V_m is the input voltage at which V_in = V_out
 </p>
 
 
-🧠 Summary Table — Day 2 Key Concepts
+## 🧠 Summary Table — Day 2 Key Concepts
 
 | Concept                      | Key Takeaway                                                         |
 | ---------------------------- | -------------------------------------------------------------------- |
