@@ -132,6 +132,46 @@ $$
 
 ---
 
+### 💨 Drift Current Concept
+
+In the **linear (resistive) region**, the current is primarily due to **carrier drift** under the channel’s electric field.
+
+- The **induced charge density** at a point _x_ along the channel is given by:
+
+\[
+Q_i(x) = -C_{ox} \left[ (V_{GS} - V(x)) - V_T \right]
+\]
+
+- Consequently, the **drain current** can be expressed as:
+
+\[
+I_D = \mu_n C_{ox} \frac{W}{L} \left( V_{GS} - V_T - \frac{V_{DS}}{2} \right) V_{DS}
+\]
+
+> This explains why Id increases linearly with Vds before the transistor reaches pinch-off.
+
+---
+
+### ⚙️ Pinch-Off and Saturation Region
+
+When the **drain-to-source voltage (Vds)** rises and satisfies:
+
+\[
+V_{DS} \ge (V_{GS} - V_T)
+\]
+
+- The channel near the **drain end** becomes **depleted**, a phenomenon called **pinch-off**.  
+- Beyond this point, the **drain current (Id) no longer increases significantly** with Vds — the transistor enters the **saturation (active) region**.
+
+**Saturation region drain current formula:**
+
+\[
+I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
+\]
+
+> In this mode, the NMOS behaves like a **constant-current source**, which is critical for analog design and amplification.
+
+
 ## SPICE Simulation Setup
 
 Clone the repository:
