@@ -94,9 +94,11 @@ $(V_{T0})$: Zero-bias threshold voltage
 ### Linear (Resistive) Region
 
 
-Condition:   $$
+Condition:   
+$$
 V_{DS} < V_{GS} - V_{T}
 $$
+
 
 
 
@@ -114,8 +116,9 @@ $$
 
 Condition: 
 $$
-V_{DS} < V_{GS} - V_{T}
+V_{DS} \ge V_{GS} - V_{T}
 $$
+
 
 
 
