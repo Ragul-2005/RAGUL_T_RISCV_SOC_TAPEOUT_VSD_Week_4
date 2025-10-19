@@ -8,6 +8,7 @@
 
 ## 📚 Table of Contents
 
+
 - [Objective — Explore CMOS Inverter Static & Dynamic Characteristics](#objective---explore-cmos-inverter-static--dynamic-characteristics)
 - [SPICE Deck 1 — CMOS Inverter VTC Simulation](#spice-deck-1---cmos-inverter-vtc-simulation)
 - [Voltage Transfer Curve (VTC) Analysis](#voltage-transfer-curve-vtc-analysis)
