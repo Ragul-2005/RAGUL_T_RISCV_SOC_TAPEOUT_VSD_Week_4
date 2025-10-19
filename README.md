@@ -40,13 +40,13 @@ By completing Week 4, you will:
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/github/last-commit/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Last Commit">
-  <img src="https://img.shields.io/github/repo-size/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Repo Size">
-  <img src="https://img.shields.io/github/issues/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4" alt="Open Issues">
-  <img src="https://img.shields.io/github/stars/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social" alt="Stars">
-  <img src="https://img.shields.io/github/forks/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=social" alt="Forks">
-</p>
+<div align="center">
+  <img src="https://img.shields.io/github/last-commit/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=for-the-badge" alt="Last Commit" />
+  <img src="https://img.shields.io/github/repo-size/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=for-the-badge" alt="Repo Size" />
+  <img src="https://img.shields.io/github/issues/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=for-the-badge" alt="Open Issues" />
+  <img src="https://img.shields.io/github/stars/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=for-the-badge" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/Ragul-2005/RAGUL_T_RISCV_SOC_TAPEOUT_VSD_Week_4?style=for-the-badge" alt="Forks" />
+</div>
 
 ## 🏁 End of Week 4
 
