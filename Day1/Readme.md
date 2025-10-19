@@ -119,6 +119,7 @@ $$
 
 
 
+
 $$
 I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
 $$
