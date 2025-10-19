@@ -149,7 +149,10 @@ $$
 
 ### ⚙️ Pinch-Off and Saturation Region
 
-When \(V_{DS} \ge (V_{GS} - V_T)\):
+When 
+$[
+V_{DS} \ge (V_{GS} - V_T)
+]$
 
 - The channel near the **drain** is **pinched-off**.  
 - Beyond this, **Id** saturates and remains almost constant.
