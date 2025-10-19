@@ -6,7 +6,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Week-4-blue?style=for-the-badge" alt="Week">
   <img src="https://img.shields.io/badge/Task-5_Completed-brightgreen?style=for-the-badge" alt="Task">
-<img src="https://img.shields.io/badge/Focus-Supply%5Fand%5FDevice-Voltage-orange?style=for-the-badge" alt="Focus">
+<img src="https://img.shields.io/badge/Focus-Supply-and-Device-Voltage-orange?style=for-the-badge" alt="Focus">
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/Tool-NGSPICE-red?style=for-the-badge" alt="Tool">
