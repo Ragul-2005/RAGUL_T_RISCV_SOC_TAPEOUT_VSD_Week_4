@@ -1,5 +1,25 @@
 # 🧩 **Day 3 — CMOS Inverter Switching Threshold & Dynamic Behavior**
 
+![Week](https://img.shields.io/badge/Week-3-blue?style=for-the-badge)
+![Tasks](https://img.shields.io/badge/Tasks-2_Completed-brightgreen?style=for-the-badge)
+![Focus](https://img.shields.io/badge/Focus-Static_and_Dynamic-Cyan?style=for-the-badge)
+
+---
+
+## 📚 Table of Contents
+
+- [Objective — Explore CMOS Inverter Static & Dynamic Characteristics](#objective---explore-cmos-inverter-static--dynamic-characteristics)
+- [SPICE Deck 1 — CMOS Inverter VTC Simulation](#spice-deck-1---cmos-inverter-vtc-simulation)
+- [Voltage Transfer Curve (VTC) Analysis](#voltage-transfer-curve-vtc-analysis)
+- [Switching Threshold (Vm)](#switching-threshold-vm)
+- [Analytical Relations](#analytical-relations)
+- [SPICE Deck 2 — Transient Response Simulation](#spice-deck-2---transient-response-simulation)
+- [Transient Analysis](#transient-analysis)
+- [Key Dynamic Parameters](#key-dynamic-parameters)
+- [Practical Insights](#practical-insights)
+- [Summary Table — Day 3 Key Concepts](#summary-table---day-3-key-concepts)
+
+
 ## 🎯 **Objective — Explore CMOS Inverter Static & Dynamic Characteristics**
 
 On **Day 3**, we dive deep into the **CMOS inverter**, the cornerstone of digital logic. Using **Sky130 SPICE simulations**, we analyze both **static voltage behavior** and **dynamic timing response** to understand how inverters operate under various conditions.  
