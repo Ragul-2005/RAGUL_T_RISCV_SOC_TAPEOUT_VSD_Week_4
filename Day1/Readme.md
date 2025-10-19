@@ -66,9 +66,12 @@ An **NMOS transistor** is a **voltage-controlled device** that allows current be
 
 The threshold voltage is calculated as:
 
+<p style="font-size:20px;">
 $$
 V_T = V_{T0} + \gamma \left( \sqrt{2 \Phi_F + V_{SB}} - \sqrt{2 \Phi_F} \right)
 $$
+</p>
+
 
 
 Where:  
